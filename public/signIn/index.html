@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Sign-In Page</h1>
+        
+    <form action="/signin" method="post" >
+        <div class="mb-3">
+           <label for="signinName" class="form-label">User Name</label>
+           <input type="text" class="form-control" name="signinName" id="signinName" placeholder="User Name">
+        </div>
+         <div class="mb-3">
+            <label for="signinEmail" class="form-label">User Email</label>
+            <input type="email" class="form-control" name="signinEmail" placeholder="Enter user Email" >
+        
+        </div>
+        <div class="mb-3">
+            <label for="signPassword" class="form-label"  >Password</label>
+            <input type="password" name="signPassword" class="form-control" id="signPassword" placeholder="Password">
+        
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit" id="signbtn">SignIn</button>
+   
+        </div>
+           </form>
+           <br>
+    <!--call sign in here-->
+    <a class="btn btn-info" href="/logIn">login</a>
+
+
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
